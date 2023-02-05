@@ -20,7 +20,7 @@ nslookup google.com
 nslookup 192.168.0.1
 
 dig google.com
-gig 192.168.0.1
+dig 192.168.0.1
 ```
 
 ### Ping
