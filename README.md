@@ -4,6 +4,48 @@ In this document i'll explain tools used for completing CTFs.
 ## Basic Usage
 Basic tools and commands that can be used in CTFs, but not only for this.
 
+### Whois
+Give us information about who owns an internet domain, related information about registrars, domain, server, location, etc.
+
+```shell
+whois google.com
+whois 192.168.0.1
+```
+
+### Nslookup and dig
+Give us information about the DNS Server related to an internet domain.
+
+```shell
+nslookup google.com
+nslookup 192.168.0.1
+
+dig google.com
+gig 192.168.0.1
+```
+
+### Ping
+Sends an ICMP Echo Request, to test if we can connect to an Internet Direction.
+
+```shell
+ping google.com
+ping 192.168.0.1
+```
+
+### Traceroute
+Allows us to track the different stops an IP packet makes between your computer and its destination, which can determinate in wich point of the conenction fails.
+
+```shell
+traceroute google.com
+traceroute 192.168.0.1
+```
+
+### Telnet
+Old protocol to connect to a remot host in an unencrypted way, over port 23. Obsolte if we can use SSH.
+
+```shell
+telnet 192.168.0.1 23
+```
+
 ### SSH
 Basic command, remote conection to a server, remote login and command-line exectuion. Can use an anonymous login, but usually needs a login.
 
